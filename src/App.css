@@ -7,4 +7,10 @@
 .profileSection {
   width: 300px;
   text-align: center;
+  display: inline-block;
+}
+
+.feedSection {
+  width: 500px;
+  display: inline-block;
 }
