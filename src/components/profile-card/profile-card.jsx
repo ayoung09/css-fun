@@ -5,7 +5,7 @@ import profilePic from '../../images/pusheen_cookie.jpg';
 class ProfileCard extends Component {
   render() {
     return (
-      <div className={css.profileCard}>
+      <div style={{ ...this.props.style }} className={css.profileCard}>
         <div className={css.headerImage} />
         <div className={css.profileTile}>
           <img src={profilePic} className={css.profilePic} alt="pusheen eating cookie" height="75" width="75" />

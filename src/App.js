@@ -17,15 +17,13 @@ class App extends PureComponent {
         <Navbar />
         <div className={css.appContent}>
           <Banner />
-          <StickyContainer style={{ height: 1200 }}>
-            <div className={css.profileSection}>
-              <Sticky topOffset={-50}>
-                {({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
-                  console.log('sticky: ', isSticky, wasSticky, style);
-                  return <ProfileCard style={style} />;
-                }}
-              </Sticky>
-            </div>
+          <StickyContainer>
+            <Sticky>
+              {({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
+                console.log('sticky: ', isSticky, wasSticky, style);
+                return <ProfileCard style={style} />;
+              }}
+            </Sticky>
             <div className={css.feedSection}>{fakeData.map(() => <FeedCard />)}</div>
           </StickyContainer>
         </div>
