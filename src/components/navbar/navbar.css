@@ -3,4 +3,5 @@
   height: 50px;
   background: #283e4a;
   position: fixed;
+  z-index: 10;
 }
