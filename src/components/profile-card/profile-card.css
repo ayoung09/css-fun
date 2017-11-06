@@ -1,0 +1,42 @@
+.profileCard {
+  margin: 15px 30px;
+  position: sticky;
+  top: 25px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+
+.headerImage {
+  background-image: url('../../images/cookies.jpg');
+  height: 70px;
+  background-size: 100%;
+}
+
+.profilePic {
+  border-radius: 100px;
+  border: 2px solid white;
+  position: absolute;
+  top: 35px;
+  left: 80px;
+}
+
+.profileTile {
+  padding-top: 40px;
+  border-bottom: 1px solid grey;
+}
+
+.viewsContainer {
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.count {
+  color: blue;
+  font-size: 24px;
+}
+
+.text {
+  color: grey;
+}
