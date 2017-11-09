@@ -20,12 +20,11 @@ class App extends PureComponent {
           <StickyContainer>
             <Sticky>
               {({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
-                console.log('sticky: ', isSticky, wasSticky, style);
                 return <ProfileCard style={style} />;
               }}
             </Sticky>
-            <div className={css.feedSection}>{fakeData.map(() => <FeedCard />)}</div>
           </StickyContainer>
+          <div className={css.feedSection}>{fakeData.map(() => <FeedCard />)}</div>
         </div>
       </div>
     );
